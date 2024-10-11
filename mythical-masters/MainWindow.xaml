@@ -1,0 +1,26 @@
+﻿<Window x:Class="mythical_masters.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:mythical_masters"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <StackPanel>
+        <StackPanel Orientation="Horizontal">
+            <ComboBox x:Name="cbLeft" Width="120" SelectionChanged="ComboBox_SelectionChanged"/>
+            <Label x:Name="lblOut" Width="120"/>
+            <ComboBox x:Name="cbRight" Width="120" SelectionChanged="ComboBox_SelectionChanged_1"/>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal">
+            <ListBox x:Name="lbLeft" Width="120"/>
+            <Label Width="120"/>
+            <ListBox x:Name="lbRight" Width="120"/>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal">
+            <Label Width="120"/>
+            <Button x:Name="btnFigth" Content="Kämpfen" Click="Button_Click" Width="120"/>
+            <Label Width="120"/>
+        </StackPanel>
+    </StackPanel>
+</Window>
